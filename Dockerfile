@@ -7,6 +7,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # Update and Install Packages
 RUN apt-get update -y && apt-get install -y  --no-install-recommends \
     ant \
+    rsync \
     git \
     openssh-client \
     rubygems \
